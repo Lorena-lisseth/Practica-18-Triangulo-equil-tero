@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Triangulo_equilátero.MainPage"
+             BackgroundColor="#E3D4D0">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,30,30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="gatico.jpg"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label Text="FÓRMULA DE HERÓN" TextColor="#303750" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Lado A" FontAttributes="Bold" TextColor="#7A8D9B"/>
+            <Entry Placeholder="Ingrese el primer lado" x:Name="A"/>
+
+            <Label Text="Lado B"  FontAttributes="Bold" TextColor="#7A8D9B"/>
+            <Entry Placeholder="Ingrese el segundo lado" x:Name="B"/>
+
+            <Label Text="Lado C" FontAttributes="Bold" TextColor="#7A8D9B"/>
+            <Entry Placeholder="Ingrese el tercer lado" x:Name="C"/>
+
+            <Label Text="Suma:" TextColor="#7A8D9B" FontAttributes="Bold"/>
+            <Entry Placeholder="La suma es" x:Name="sum" IsEnabled="False" TextColor="Black"/>
+
+
+            <Label Text="Respuesta" TextColor="#7A8D9B" FontAttributes="Bold" />
+            <Entry Placeholder="Resltado" x:Name="resul" IsEnabled="False" TextColor="Black"/>
+            <HorizontalStackLayout>
+                <ImageButton Source="melody.jpg" Clicked="Calcular_Clicked" x:Name="Calcular" CornerRadius="40" HeightRequest="120" Margin="10" WidthRequest="120"/>
+
+                <ImageButton Source="kuromi.jpg" Clicked="Limpiar_Clicked" x:Name="Limpiar" CornerRadius="40" HeightRequest="120" Margin="10" WidthRequest="120"/>
+            
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
